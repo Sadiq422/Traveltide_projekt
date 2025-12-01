@@ -1,0 +1,5 @@
+,Metric,Test,Statistic,P-value,Significance
+0,total_spend,ANOVA,118.33062900321822,2.6265343490112784e-97,***
+1,num_trips,ANOVA,1501.811986140689,0.0,***
+2,cancelation_rate,ANOVA,,,ns
+3,num_sessions,ANOVA,2.641719077648013,0.031989437558104336,*
