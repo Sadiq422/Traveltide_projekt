@@ -3,4 +3,5 @@ echo "Data/processed/sessions.csv" >> .gitignore
 echo "Data/processed/users.csv" >> .gitignore
 echo "__pycache__/" >> .gitignore
 echo ".ipynb_checkpoints/" >> .gitignore
-echo ".DS_Store" >> .gitignore
+echo ".DS_Store" >> .gitignore.DS_Store
+*.DS_Store
