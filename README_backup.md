@@ -4,9 +4,6 @@
 
 TravelTide is a comprehensive data analysis platform designed to transform raw travel service data into actionable business intelligence. The project analyzes user behavior, segments customers into meaningful clusters, and assigns targeted perks to optimize user engagement and business outcomes. Through a combination of data processing, machine learning, and visualization, TravelTide provides insights into customer value, preferences, and interaction patterns.
 
-
-**Presentation and Report Summary** are in the `repots/docs` directory
-
 ## 🏗️ Project Architecture
 
 ´´´
@@ -146,8 +143,8 @@ TravelTide/
 
 2. **Business Rule Segmentation**
    - RFM (Recency, Frequency, Monetary) analysis
-- Engagement scoring
-- Demographic-based grouping
+   - Engagement scoring
+   - Demographic-based grouping
 
 ### Perk Assignment Logic
 - Segment-specific perk recommendations
