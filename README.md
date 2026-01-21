@@ -49,6 +49,7 @@ TravelTide/
 │
 ├── requirements.txt               # Python dependencies
 └── README.md                      # This documentation
+
 ´´´
 
 ## 🎯 Key Features
