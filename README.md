@@ -1,13 +1,13 @@
-#**TravelTide: Kunden-Segmentierung & Vorteils-Zuteilungsplattform**
+**TravelTide: Kunden-Segmentierung & Vorteils-Zuteilungsplattform**
 
 
-📋# **Übersicht**
+📋 **Übersicht**
 
 TravelTide ist eine umfassende Datenanalyseplattform, die entwickelt wurde, um Rohdaten von Reisediensten in umsetzbare Geschäftsinformationen zu verwandeln. Das Projekt analysiert das Nutzerverhalten, segmentiert Kunden in aussagekräftige Gruppen und weist gezielte Vorteile zu, um das Nutzerengagement und Geschäftsergebnisse zu optimieren. Durch eine Kombination aus Datenverarbeitung, maschinellem Lernen und Visualisierung liefert TravelTide Einblicke in Kund:innenwert, -präferenzen und Interaktionsmuster.
 
 Präsentation und Berichtszusammenfassung befinden sich im Verzeichnis reports/docs.
 
-🏗️# **Projektarchitektur**
+🏗️ **Projektarchitektur**
 
 ````
 TravelTide/
@@ -51,7 +51,7 @@ TravelTide/
 └── README.md                      # Diese Dokumentation
 ````
 
-🎯# **Hauptfunktionen**
+🎯 **Hauptfunktionen**
 
 🔍  Datenintelligenz
 
@@ -127,14 +127,14 @@ Jupyter Notebook/Lab
 
 📈 **Analysemethoden**
 
-# Datenverarbeitung
+ Datenverarbeitung
 
 - Sitzungsdatenaggregation und -bereinigung
 - Nutzer-Feature-Engineering (Engagement, Ausgaben, Häufigkeitskennzahlen)
 - Fehlende Werte-Imputation und Ausreißerbehandlung
 - Daten-Normalisierung und Standardisierung
 
-# Segmentierungsansätze
+ Segmentierungsansätze
 
 1. K-Means-Clustering
 - Ellbogenmethode zur optimalen Clusterbestimmung
@@ -146,7 +146,7 @@ Jupyter Notebook/Lab
 - Engagement-Bewertung
 - Demografie-basierte Gruppierung
 
-# Logik zur Vorteils-Zuteilung
+ Logik zur Vorteils-Zuteilung
 
 - Segment-spezifische Vorteilsempfehlungen
 - Kosten-Nutzen-Analyse
@@ -155,14 +155,14 @@ Jupyter Notebook/Lab
 
 📁 **Datenstruktur**
 
-# Eingabedaten
+ Eingabedaten
 
 - Nutzer:innen: Demografische Informationen und Kontodetails
 - Sitzungen: Nutzerinteraktionslogs und Verhaltensverfolgung
 - Flüge: Buchungshistorie und Reisemuster
 - Hotels: Unterkunftspräferenzen und Ausgaben
 
-# Ausgabedaten
+ Ausgabedaten
 
 - Nutzer:innensegmente: Clusterzuordnungen und Profile
 - Vorteilsempfehlungen: Personalisierte Belohnungsvorschläge
@@ -204,6 +204,7 @@ Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe die LICENSE-Datei fü
 
 👤 **Autor:**
 Sadiq Qais
+<br>
 Data Scientist & Analytics Specialist
 
 Inspiration aus der Kundensegmentierungs-Literatur
