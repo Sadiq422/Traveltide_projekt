@@ -1,13 +1,13 @@
-**TravelTide: Kunden-Segmentierung & Vorteils-Zuteilungsplattform**
+# TravelTide: Kunden-Segmentierung & Vorteils-Zuteilungsplattform
 
 
-📋 **Übersicht**
+# 📋 Übersicht
 
 TravelTide ist eine umfassende Datenanalyseplattform, die entwickelt wurde, um Rohdaten von Reisediensten in umsetzbare Geschäftsinformationen zu verwandeln. Das Projekt analysiert das Nutzerverhalten, segmentiert Kunden in aussagekräftige Gruppen und weist gezielte Vorteile zu, um das Nutzerengagement und Geschäftsergebnisse zu optimieren. Durch eine Kombination aus Datenverarbeitung, maschinellem Lernen und Visualisierung liefert TravelTide Einblicke in Kund:innenwert, -präferenzen und Interaktionsmuster.
 
 Präsentation und Berichtszusammenfassung befinden sich im Verzeichnis reports/docs.
 
-🏗️ **Projektarchitektur**
+# 🏗️ Projektarchitektur
 
 ````
 TravelTide/
@@ -51,44 +51,44 @@ TravelTide/
 └── README.md                      # Diese Dokumentation
 ````
 
-🎯 **Hauptfunktionen**
+# 🎯 Hauptfunktionen
 
-🔍  Datenintelligenz
+**🔍  Datenintelligenz**
 
 - Automatisierte Datenbereinigungs- und Vorverarbeitungspipelines
 - Umfassende explorative Datenanalyse (EDA)
 - Erweiterte Feature-Engineering und Kennzahlenberechnung
 - Ausreißererkennung und statistische Validierung
 
-👥 **Kundensegmentierung**
+**👥 Kundensegmentierung**
 
 - Maschinelles Lernen Ansatz: K-Means-Clustering mit PCA-Optimierung
 - Geschäftsregel-Ansatz: Manuelle Segmentierung basierend auf Kernkennzahlen
 - Segmentprofilierung und vergleichende Analyse
 - Bewertung der Geschäftsauswirkung für jedes Segment
 
-🎁 **Personalisierte Vorteils-Zuteilung**
+**🎁 Personalisierte Vorteils-Zuteilung**
 
 - Datengetriebene Strategien zur Vorteilszuweisung
 - ROI-Analyse für die Vorteilszuteilung
 - Segment-spezifische Belohnungsoptimierung
 - Automatisierte Vorteilszuteilungspipelines
 
-📊 **Visuelle Analytik**
+**📊 Visuelle Analytik**
 
 - Interaktive Dashboards und Visualisierungen
 - Demografische und verhaltensbezogene Analyse-Diagramme
 - Segmentvergleichsvisualisierungen
 - Berichterstattung über Geschäftsauswirkungen
 
-🚀 **Erste Schritte**
+**🚀 Erste Schritte**
 
 Voraussetzungen
 Python 3.8+
 
 Jupyter Notebook/Lab
 
-🛠️**Installation**
+# 🛠️ Installation**
 
 - Repository klonen
   git clone <repository-url>
@@ -102,7 +102,7 @@ Jupyter Notebook/Lab
   Erforderliche Dateien: flights.csv, hotels.csv, sessions.csv, users.csv
 
 
-**Nutzungsworkflow**
+#🧰 Nutzungsworkflow
 
 - Datenvorbereitung
   Datenverarbeitungspipeline ausführen
@@ -125,7 +125,7 @@ Jupyter Notebook/Lab
   python -m core.visualization
 
 
-📈 **Analysemethoden**
+#📈 Analysemethoden
 
  Datenverarbeitung
 
@@ -153,7 +153,7 @@ Jupyter Notebook/Lab
 - Implementierungsszenarien (kostenlos, kostenpflichtig, hybrid)
 - Berechnungen der erwarteten Kapitalrendite (ROI)
 
-📁 **Datenstruktur**
+#📁 Datenstruktur
 
  Eingabedaten
 
@@ -169,7 +169,7 @@ Jupyter Notebook/Lab
 - Analytische Berichte: Geschäftseinblicke und Visualisierungen
 - Verarbeitete Features: Erzeugte Kennzahlen für die Analyse
 
-📊 **Erwartete Ergebnisse**
+#📊 Erwartete Ergebnisse
 
 1. Kunden:inneneinblicke
 - Hochwertige Nutzer:innensegmente identifizieren
@@ -188,7 +188,7 @@ Jupyter Notebook/Lab
 - Skalierbare Systeme zur Vorteilszuteilung
 - Wiederverwendbare analytische Frameworks
 
-🤝 **Mitwirkung**
+#🤝 Mitwirkung
 
 Wir freuen uns über Beiträge! Bitte folgen Sie diesen Schritten:
 
@@ -198,11 +198,11 @@ Wir freuen uns über Beiträge! Bitte folgen Sie diesen Schritten:
 - Pushen Sie zum Branch (git push origin feature/AmazingFeature)
 - Öffnen Sie einen Pull Request
 
-📄 **Lizenz**
+#📄 Lizenz
 
 Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe die LICENSE-Datei für Details.
 
-👤 **Autor:**
+#👤 Autor:
 Sadiq Qais
 <br>
 Data Scientist & Analytics Specialist
