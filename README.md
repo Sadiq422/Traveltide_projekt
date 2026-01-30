@@ -9,7 +9,7 @@ TravelTide is a comprehensive data analysis platform designed to transform raw t
 
 ## 🏗️ Project Architecture
 
-´´´
+````
 TravelTide/
 ├── core/                          # Core Python modules
 │   ├── load_data.py               # Data loading and preprocessing
@@ -50,7 +50,7 @@ TravelTide/
 ├── requirements.txt               # Python dependencies
 └── README.md                      # This documentation
 
-´´´
+````
 
 ## 🎯 Key Features
 
