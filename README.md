@@ -1,4 +1,4 @@
-**TravelTide: Kunden-Segmentierung & Vorteils-Zuteilungsplattform**
+#**TravelTide: Kunden-Segmentierung & Vorteils-Zuteilungsplattform**
 
 
 📋# **Übersicht**
@@ -7,7 +7,7 @@ TravelTide ist eine umfassende Datenanalyseplattform, die entwickelt wurde, um R
 
 Präsentation und Berichtszusammenfassung befinden sich im Verzeichnis reports/docs.
 
-🏗️ **Projektarchitektur**
+🏗️# **Projektarchitektur**
 
 ````
 TravelTide/
