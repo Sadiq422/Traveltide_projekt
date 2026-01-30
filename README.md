@@ -88,7 +88,7 @@ Python 3.8+
 
 Jupyter Notebook/Lab
 
-# 🛠️ Installation**
+# 🛠️ Installation
 
 - Repository klonen
   git clone <repository-url>
