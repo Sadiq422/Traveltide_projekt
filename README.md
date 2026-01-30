@@ -1,7 +1,8 @@
 **TravelTide: Kunden-Segmentierung & Vorteils-Zuteilungsplattform**
 
 
-📋 **Übersicht**
+📋# **Übersicht**
+
 TravelTide ist eine umfassende Datenanalyseplattform, die entwickelt wurde, um Rohdaten von Reisediensten in umsetzbare Geschäftsinformationen zu verwandeln. Das Projekt analysiert das Nutzerverhalten, segmentiert Kunden in aussagekräftige Gruppen und weist gezielte Vorteile zu, um das Nutzerengagement und Geschäftsergebnisse zu optimieren. Durch eine Kombination aus Datenverarbeitung, maschinellem Lernen und Visualisierung liefert TravelTide Einblicke in Kund:innenwert, -präferenzen und Interaktionsmuster.
 
 Präsentation und Berichtszusammenfassung befinden sich im Verzeichnis reports/docs.
@@ -50,44 +51,38 @@ TravelTide/
 └── README.md                      # Diese Dokumentation
 ````
 
-🎯 **Hauptfunktionen**
-🔍 Datenintelligenz
-Automatisierte Datenbereinigungs- und Vorverarbeitungspipelines
+🎯# **Hauptfunktionen**
 
-Umfassende explorative Datenanalyse (EDA)
+🔍  Datenintelligenz
 
-Erweiterte Feature-Engineering und Kennzahlenberechnung
-
-Ausreißererkennung und statistische Validierung
+- Automatisierte Datenbereinigungs- und Vorverarbeitungspipelines
+- Umfassende explorative Datenanalyse (EDA)
+- Erweiterte Feature-Engineering und Kennzahlenberechnung
+- Ausreißererkennung und statistische Validierung
 
 👥 **Kundensegmentierung**
-Maschinelles Lernen Ansatz: K-Means-Clustering mit PCA-Optimierung
 
-Geschäftsregel-Ansatz: Manuelle Segmentierung basierend auf Kernkennzahlen
-
-Segmentprofilierung und vergleichende Analyse
-
-Bewertung der Geschäftsauswirkung für jedes Segment
+- Maschinelles Lernen Ansatz: K-Means-Clustering mit PCA-Optimierung
+- Geschäftsregel-Ansatz: Manuelle Segmentierung basierend auf Kernkennzahlen
+- Segmentprofilierung und vergleichende Analyse
+- Bewertung der Geschäftsauswirkung für jedes Segment
 
 🎁 **Personalisierte Vorteils-Zuteilung**
-Datengetriebene Strategien zur Vorteilszuweisung
 
-ROI-Analyse für die Vorteilszuteilung
-
-Segment-spezifische Belohnungsoptimierung
-
-Automatisierte Vorteilszuteilungspipelines
+- Datengetriebene Strategien zur Vorteilszuweisung
+- ROI-Analyse für die Vorteilszuteilung
+- Segment-spezifische Belohnungsoptimierung
+- Automatisierte Vorteilszuteilungspipelines
 
 📊 **Visuelle Analytik**
-Interaktive Dashboards und Visualisierungen
 
-Demografische und verhaltensbezogene Analyse-Diagramme
-
-Segmentvergleichsvisualisierungen
-
-Berichterstattung über Geschäftsauswirkungen
+- Interaktive Dashboards und Visualisierungen
+- Demografische und verhaltensbezogene Analyse-Diagramme
+- Segmentvergleichsvisualisierungen
+- Berichterstattung über Geschäftsauswirkungen
 
 🚀 **Erste Schritte**
+
 Voraussetzungen
 Python 3.8+
 
