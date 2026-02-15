@@ -53,35 +53,35 @@ TravelTide/
 
 # 🎯 Hauptfunktionen
 
-## 🔍 Datenintelligenz
+## Datenintelligenz
 
 - Automatisierte Datenbereinigungs- und Vorverarbeitungspipelines
 - Umfassende explorative Datenanalyse (EDA)
 - Erweiterte Feature-Engineering und Kennzahlenberechnung
 - Ausreißererkennung und statistische Validierung
 
-## 👥 Kundensegmentierung
+## Kundensegmentierung
 
 - Maschinelles Lernen Ansatz: K-Means-Clustering mit PCA-Optimierung
 - Geschäftsregel-Ansatz: Manuelle Segmentierung basierend auf Kernkennzahlen
 - Segmentprofilierung und vergleichende Analyse
 - Bewertung der Geschäftsauswirkung für jedes Segment
 
-## 🎁 Personalisierte Vorteils-Zuteilung
+## Personalisierte Vorteils-Zuteilung
 
 - Datengetriebene Strategien zur Vorteilszuweisung
 - ROI-Analyse für die Vorteilszuteilung
 - Segment-spezifische Belohnungsoptimierung
 - Automatisierte Vorteilszuteilungspipelines
 
-## 📊 Visuelle Analytik
+## Visuelle Analytik
 
 - Interaktive Dashboards und Visualisierungen
 - Demografische und verhaltensbezogene Analyse-Diagramme
 - Segmentvergleichsvisualisierungen
 - Berichterstattung über Geschäftsauswirkungen
 
-## 🚀 Erste Schritte
+## Erste Schritte
 
 Voraussetzungen
 Python 3.8+
