@@ -1,218 +1,78 @@
-# TravelTide: Kunden-Segmentierung & Vorteils-Zuteilungsplattform
+# TravelTide — Kundensegmentierung & Perk-Empfehlungssystem
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-# 📋 Übersicht
+End-to-End-Datenanalyseplattform, die Rohdaten eines Reiseanbieters in umsetzbare Geschäftsentscheidungen verwandelt: Nutzerverhalten analysieren, Kunden segmentieren und gezielte Perks zuweisen, um Engagement und Umsatz zu optimieren.
 
-TravelTide ist eine umfassende Datenanalyseplattform, die entwickelt wurde, um Rohdaten von Reisediensten in umsetzbare Geschäftsinformationen zu verwandeln. Das Projekt analysiert das Nutzerverhalten, segmentiert Kunden in aussagekräftige Gruppen und weist gezielte Vorteile zu, um das Nutzerengagement und Geschäftsergebnisse zu optimieren. Durch eine Kombination aus Datenverarbeitung, maschinellem Lernen und Visualisierung liefert TravelTide Einblicke in Kund:innenwert, -präferenzen und Interaktionsmuster.
+> Präsentation und Bericht: siehe `reports/docs/`.
 
-Präsentation und Berichtszusammenfassung befinden sich im Verzeichnis reports/docs.
+---
 
-# 🏗️ Projektarchitektur
+## 🎯 Problemstellung
 
-````
-TravelTide/
-├── core/                          # Kern-Python-Module
-│   ├── load_data.py               # Datenladen und Vorverarbeitung
-│   ├── eda.py                     # Werkzeuge für explorative Datenanalyse (EDA)
-│   ├── advance_metrics.py         # Erweiterte Feature-Engineering
-│   ├── segment_analyse.py         # Segmentierungsanalyse
-│   ├── perk_assignment.py         # Logik für Vorteilszuteilung
-│   ├── visualization.py           # Visualisierungs-Hilfsfunktionen
-│   └── utils.py                   # Hilfsfunktionen
-│
-├── data/                          # Datenverwaltung
-│   ├── raw/                       # Quelldaten (CSV-Dateien)
-│   │   ├── flights.csv
-│   │   ├── hotels.csv
-│   │   ├── sessions.csv
-│   │   └── users.csv
-│   │
-│   └── processed/                 # Transformierte Datensätze
-│       ├── feature_metrics/       # Berechnete Nutzerkennzahlen
-│       ├── kmean/                 # K-Means-Clustering-Ergebnisse
-│       ├── non_ml/                # Regelbasierte Segmentierung
-│       └── pca/                   # Ergebnisse der Dimensionsreduktion
-│
-├── notebooks/                     # Interaktive Analyse
-│   ├── eda.ipynb                  # Erste Datenexploration
-│   ├── kmean_cluster.ipynb        # ML-basiertes Clustering
-│   ├── segment_analyse.ipynb      # Segmentbewertung
-│   ├── perk_assignment.ipynb      # Vorteilsstrategie-Design
-│   └── pca_processing.ipynb       # Feature-Raum-Optimierung
-│
-├── reports/                       # Ausgaben und Visualisierungen
-│   ├── eda/viz/                   # Diagramme zur explorativen Analyse
-│   └── viz/                       # Grafiken für die finale Präsentation
-│
-├── sql/                           # Datenbank-Skripte
-│   └── session_base.sql
-│
-├── requirements.txt               # Python-Abhängigkeiten
-└── README.md                      # Diese Dokumentation
-````
+TravelTide möchte sein Loyalty-Programm verbessern, weiß aber nicht, welche Kundengruppen welche Vorteile (Perks) erhalten sollten. Ziel: datengetriebene Segmente bilden und jedem Segment den wirkungsvollsten Perk zuordnen.
 
-# 🎯 Hauptfunktionen
+## 🗂️ Daten
 
-## Datenintelligenz
+Vier Quelltabellen (`users`, `sessions`, `flights`, `hotels`), aufbereitet über SQL und eine modulare Python-Pipeline zu Nutzerkennzahlen (Engagement, Ausgaben, Häufigkeit).
 
-- Automatisierte Datenbereinigungs- und Vorverarbeitungspipelines
-- Umfassende explorative Datenanalyse (EDA)
-- Erweiterte Feature-Engineering und Kennzahlenberechnung
-- Ausreißererkennung und statistische Validierung
+## 🧪 Methoden
 
-## Kundensegmentierung
+- **Datenaufbereitung:** Sitzungsaggregation, Feature Engineering, Imputation, Ausreißerbehandlung, statistische Validierung.
+- **Segmentierung (zwei Ansätze):**
+  - *Machine Learning:* K-Means-Clustering mit PCA, Elbow-Methode und Silhouetten-Analyse zur Clusterbestimmung.
+  - *Regelbasiert:* RFM-Analyse (Recency, Frequency, Monetary) und Engagement-Scoring.
+- **Perk-Zuteilung:** segment-spezifische Empfehlungen inkl. Kosten-Nutzen- und ROI-Analyse.
 
-- Maschinelles Lernen Ansatz: K-Means-Clustering mit PCA-Optimierung
-- Geschäftsregel-Ansatz: Manuelle Segmentierung basierend auf Kernkennzahlen
-- Segmentprofilierung und vergleichende Analyse
-- Bewertung der Geschäftsauswirkung für jedes Segment
+## 📈 Ergebnisse
 
-## Personalisierte Vorteils-Zuteilung
+![Cluster-Analyse](reports/viz/kmean/elbow_silhouette_plot.png)
 
-- Datengetriebene Strategien zur Vorteilszuweisung
-- ROI-Analyse für die Vorteilszuteilung
-- Segment-spezifische Belohnungsoptimierung
-- Automatisierte Vorteilszuteilungspipelines
+- Identifikation klar abgegrenzter, hochwertiger Nutzersegmente.
+- Jedem Segment ein datenbasierter Perk zugeordnet, bewertet nach erwartetem ROI.
+- Vollständige, reproduzierbare Pipeline von den Rohdaten bis zur Präsentation.
 
-## Visuelle Analytik
+*(Details und alle Visualisierungen im Ordner `reports/`.)*
 
-- Interaktive Dashboards und Visualisierungen
-- Demografische und verhaltensbezogene Analyse-Diagramme
-- Segmentvergleichsvisualisierungen
-- Berichterstattung über Geschäftsauswirkungen
+## 🛠️ Setup
 
-## Erste Schritte
+```bash
+git clone https://github.com/Sadiq422/Traveltide_projekt.git
+cd Traveltide_projekt
+pip install -r requirements.txt
+# Rohdaten in data/raw/ ablegen: flights.csv, hotels.csv, sessions.csv, users.csv
+```
 
-Voraussetzungen
-Python 3.8+
+Workflow:
 
-Jupyter Notebook/Lab
+```bash
+python -m core.load_data            # Datenaufbereitung
+jupyter notebook                    # notebooks/eda.ipynb, kmean_cluster.ipynb, ...
+python -m core.perk_assignment      # Perk-Zuteilung
+```
 
-# 🛠️ Installation
+## 🏗️ Projektstruktur
 
-- Repository klonen
-  git clone <repository-url>
-  cd TravelTide
+```
+core/        # Module: load_data, eda, advance_metrics, segment_analyse, perk_assignment, utils
+notebooks/   # eda, kmean_cluster, pca_processing, segment_analyse, perk_assignment
+sql/         # session_base.sql
+reports/     # Visualisierungen, Dashboards, Präsentation
+```
 
-- Abhängigkeiten installieren
-  pip install -r requirements.txt
+## 🧰 Tech Stack
 
-- Daten vorbereiten
-  Platzieren Sie die Rohdatendateien in data/raw/
-  Erforderliche Dateien: flights.csv, hotels.csv, sessions.csv, users.csv
+Python (pandas, NumPy, scikit-learn), SQL, K-Means, PCA, RFM, Matplotlib/Seaborn, Jupyter.
 
+## 👤 Autor
 
-# 🧰 Nutzungsworkflow
+**Sadiq Qais** — Junior Data Scientist & Data Analyst
+[LinkedIn](https://www.linkedin.com/in/sadiq-qais) · qais.sadiq422@gmail.com
 
-- Datenvorbereitung
-  Datenverarbeitungspipeline ausführen
-  python -m core.load_data
+## 📄 Lizenz
 
-- Explorative Analyse
-  Jupyter starten und notebooks/eda.ipynb öffnen
-  jupyter notebook
-
-- Kundensegmentierung
-  Für ML-basierte Segmentierung: notebooks/kmean_cluster.ipynb
-  Für regelbasierte Segmentierung: notebooks/segment_analyse.ipynb
-
-- Vorteils-Zuteilung
-  Logik zur Vorteilszuteilung prüfen und ausführen
-  python -m core.perk_assignment
-
-- Berichte erstellen
-  Visualisierungen und Zusammenfassungen erstellen
-  python -m core.visualization
-
-
-# 📈 Analysemethoden
-
- Datenverarbeitung
-
-- Sitzungsdatenaggregation und -bereinigung
-- Nutzer-Feature-Engineering (Engagement, Ausgaben, Häufigkeitskennzahlen)
-- Fehlende Werte-Imputation und Ausreißerbehandlung
-- Daten-Normalisierung und Standardisierung
-
- Segmentierungsansätze
-
-1. K-Means-Clustering
-- Ellbogenmethode zur optimalen Clusterbestimmung
-- PCA zur Dimensionsreduktion
-- Silhouetten-Analyse für Clusterqualität
-
-2. Geschäftsregel-Segmentierung
-- RFM-Analyse (Recency, Frequency, Monetary)
-- Engagement-Bewertung
-- Demografie-basierte Gruppierung
-
- Logik zur Vorteils-Zuteilung
-
-- Segment-spezifische Vorteilsempfehlungen
-- Kosten-Nutzen-Analyse
-- Implementierungsszenarien (kostenlos, kostenpflichtig, hybrid)
-- Berechnungen der erwarteten Kapitalrendite (ROI)
-
-# 📁 Datenstruktur
-
- Eingabedaten
-
-- Nutzer:innen: Demografische Informationen und Kontodetails
-- Sitzungen: Nutzerinteraktionslogs und Verhaltensverfolgung
-- Flüge: Buchungshistorie und Reisemuster
-- Hotels: Unterkunftspräferenzen und Ausgaben
-
- Ausgabedaten
-
-- Nutzer:innensegmente: Clusterzuordnungen und Profile
-- Vorteilsempfehlungen: Personalisierte Belohnungsvorschläge
-- Analytische Berichte: Geschäftseinblicke und Visualisierungen
-- Verarbeitete Features: Erzeugte Kennzahlen für die Analyse
-
-# 📊 Erwartete Ergebnisse
-
-1. Kunden:inneneinblicke
-- Hochwertige Nutzer:innensegmente identifizieren
-- Verhaltensmuster verstehen
-- Nutzer:innenpräferenzen und -bedürfnisse vorhersagen
-
-2. Geschäftsauswirkung
-
-- Optimierte Marketingausgaben durch gezielte Vorteile
-- Erhöhtes Nutzer:innenengagement und -bindung
-- Datengetriebene Entscheidungsfindung für die Produktentwicklung
-
-3. Operative Effizienz
-
-- Automatisierte Segmentierungspipelines
-- Skalierbare Systeme zur Vorteilszuteilung
-- Wiederverwendbare analytische Frameworks
-
-# 🤝 Mitwirkung
-
-Wir freuen uns über Beiträge! Bitte folgen Sie diesen Schritten:
-
-- Forken Sie das Repository
-- Erstellen Sie einen Feature-Branch (git checkout -b feature/AmazingFeature)
-- Committen Sie Ihre Änderungen (git commit -m 'Add AmazingFeature')
-- Pushen Sie zum Branch (git push origin feature/AmazingFeature)
-- Öffnen Sie einen Pull Request
-
-# 📄 Lizenz
-
-Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe die LICENSE-Datei für Details.
-
-# 👤 Autor:
-Sadiq Qais
-<br>
-Data Scientist & Analytics Specialist
-
-Inspiration aus der Kundensegmentierungs-Literatur
-Open-Source Data-Science-Community
-
-
-**TravelTide** – Verwandelt Reisendaten durch intelligente Segmentierung und personalisierte Erfahrungen in Kund:innenbegeisterung. ✈️🏨📊
-
-
-
-
+MIT — siehe `LICENSE`.
